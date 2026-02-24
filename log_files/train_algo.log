@@ -1,0 +1,67 @@
+2025-10-01 19:16:57,394 - INFO - Giving Data to Each Function
+2025-10-01 19:16:57,394 - INFO - ----KNN--------
+2025-10-01 19:17:01,767 - INFO - Test Accuracy KNN : 0.911
+2025-10-01 19:17:05,050 - INFO - confusion matrix : [[1556  137]
+ [ 308 2999]]
+2025-10-01 19:17:08,076 - INFO - classification_report :               precision    recall  f1-score   support
+
+           0       0.83      0.92      0.87      1693
+           1       0.96      0.91      0.93      3307
+
+    accuracy                           0.91      5000
+   macro avg       0.90      0.91      0.90      5000
+weighted avg       0.92      0.91      0.91      5000
+
+2025-10-01 19:17:11,074 - INFO - ----NB--------
+2025-10-01 19:17:11,356 - INFO - Test Accuracy NB : 0.771
+2025-10-01 19:17:11,398 - INFO - confusion matrix : [[1678   15]
+ [1130 2177]]
+2025-10-01 19:17:11,450 - INFO - classification_report :               precision    recall  f1-score   support
+
+           0       0.60      0.99      0.75      1693
+           1       0.99      0.66      0.79      3307
+
+    accuracy                           0.77      5000
+   macro avg       0.80      0.82      0.77      5000
+weighted avg       0.86      0.77      0.78      5000
+
+2025-10-01 19:17:11,495 - INFO - ----LR--------
+2025-10-01 19:17:12,601 - INFO - Test Accuracy LR : 0.9254
+2025-10-01 19:17:12,608 - INFO - confusion matrix : [[1595   98]
+ [ 275 3032]]
+2025-10-01 19:17:12,625 - INFO - classification_report :               precision    recall  f1-score   support
+
+           0       0.85      0.94      0.90      1693
+           1       0.97      0.92      0.94      3307
+
+    accuracy                           0.93      5000
+   macro avg       0.91      0.93      0.92      5000
+weighted avg       0.93      0.93      0.93      5000
+
+2025-10-01 19:17:12,629 - INFO - ----DT--------
+2025-10-01 19:17:13,592 - INFO - Test Accuracy DT : 0.9356
+2025-10-01 19:17:13,600 - INFO - confusion matrix : [[1532  161]
+ [ 161 3146]]
+2025-10-01 19:17:13,615 - INFO - classification_report :               precision    recall  f1-score   support
+
+           0       0.90      0.90      0.90      1693
+           1       0.95      0.95      0.95      3307
+
+    accuracy                           0.94      5000
+   macro avg       0.93      0.93      0.93      5000
+weighted avg       0.94      0.94      0.94      5000
+
+2025-10-01 19:17:13,623 - INFO - ----RF--------
+2025-10-01 19:17:14,014 - INFO - Test Accuracy RF : 0.9288
+2025-10-01 19:17:14,031 - INFO - confusion matrix : [[1524  169]
+ [ 187 3120]]
+2025-10-01 19:17:14,061 - INFO - classification_report :               precision    recall  f1-score   support
+
+           0       0.89      0.90      0.90      1693
+           1       0.95      0.94      0.95      3307
+
+    accuracy                           0.93      5000
+   macro avg       0.92      0.92      0.92      5000
+weighted avg       0.93      0.93      0.93      5000
+
+2025-10-01 19:17:14,077 - INFO - --------AUC--ROC----------

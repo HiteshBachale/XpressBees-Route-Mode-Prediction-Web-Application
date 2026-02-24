@@ -1,0 +1,53 @@
+********* Common ways to handle datetime columns *******
+
+1. Convert to ordinal (number of days since some epoch)
+
+X_train_num[i + '_ordinal'] = X_train_num[i].map(lambda x: x.toordinal())
+X_test_num[i + '_ordinal'] = X_test_num[i].map(lambda x: x.toordinal())
+
+Then you can log-transform these ordinals if needed.
+
+2. Extract date parts (features)
+
+X_train_num[i + '_year'] = X_train_num[i].dt.year
+X_train_num[i + '_month'] = X_train_num[i].dt.month
+X_train_num[i + '_day'] = X_train_num[i].dt.day
+X_train_num[i + '_weekday'] = X_train_num[i].dt.weekday
+
+X_test_num[i + '_year'] = X_test_num[i].dt.year
+X_test_num[i + '_month'] = X_test_num[i].dt.month
+X_test_num[i + '_day'] = X_test_num[i].dt.day
+X_test_num[i + '_weekday'] = X_test_num[i].dt.weekday
+
+
+3. Time difference (relative to a reference date)
+Example: "days since earliest date in training set":
+
+ref_date = X_train_num[i].min()
+X_train_num[i + '_days'] = (X_train_num[i] - ref_date).dt.days
+X_test_num[i + '_days'] = (X_test_num[i] - ref_date).dt.days
+
+********** 🔧 Updated function (numeric + date handling) 🔧 *********
+* Python Code:
+
+def log_tran(X_train_num, X_test_num):
+    try:
+        for i in X_train_num.columns:
+            if pd.api.types.is_numeric_dtype(X_train_num[i]):
+                # Numeric columns → log transform
+                X_train_num[i + '_log'] = np.log(X_train_num[i] + 1)
+                X_test_num[i + '_log'] = np.log(X_test_num[i] + 1)
+
+            elif pd.api.types.is_datetime64_any_dtype(X_train_num[i]):
+                # Date columns → convert to days since min date
+                ref_date = X_train_num[i].min()
+                X_train_num[i + '_days'] = (X_train_num[i] - ref_date).dt.days
+                X_test_num[i + '_days'] = (X_test_num[i] - ref_date).dt.days
+
+        logger.info(f'Log Transformation Completed Successfully : {X_train_num.columns}')
+
+        return X_train_num, X_test_num
+
+    except Exception as e:
+        er_ty, er_msg, er_lin = sys.exc_info()
+        logger.info(f'Issue is : {er_lin.tb_lineno} : due to : {er_msg}')

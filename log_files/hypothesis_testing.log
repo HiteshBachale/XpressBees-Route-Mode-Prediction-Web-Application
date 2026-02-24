@@ -1,0 +1,36 @@
+2025-10-01 19:16:49,151 - INFO - Dependent variable unique labels before are : ['Air' 'Surface'] :
+2025-10-01 19:16:49,155 - INFO - Dependent variable unique labels after are : [1 0] :
+2025-10-01 19:16:49,169 - INFO - Hypothesis Testing : [[ 2.48046817e-001  3.98974200e-278]
+ [ 2.00200075e-001  6.56614675e-180]
+ [-1.41492420e-001  6.02689847e-090]
+ [-1.34334022e-001  3.49192306e-081]
+ [-1.26097261e-001  1.11272824e-071]
+ [-2.12068682e-001  3.98488092e-202]
+ [-2.22606979e-001  5.01926190e-223]
+ [-2.17362873e-001  1.73710818e-212]
+ [-1.94347852e-001  1.83253942e-169]
+ [-2.61682379e-001  1.98103316e-310]
+ [-1.72868660e-001  5.81811914e-134]
+ [-1.89913252e-001  9.04795834e-162]]
+2025-10-01 19:16:49,172 - INFO - Train Column Names : Index(['ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')
+2025-10-01 19:16:49,172 - INFO - Test Column Names : Index(['ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')

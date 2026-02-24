@@ -1,0 +1,636 @@
+2025-10-01 19:16:48,861 - INFO - Data Loaded Successfull : (25000, 29)
+2025-10-01 19:16:48,921 - INFO - X Columns Names :         lane  OriginHubName OriginHubCity OriginHubZoneName  ShipPinCode  ... DestinationHubZoneName Destination_BagOutScanDate DeliveryDate PhysicalWeight VolumetricWeight
+0       Zone          Mandi         Mandi             North       110037  ...                  North        2019-01-02 13:56:50   2019-01-02           5.00             4.32
+1       Zone  RSC/Pilibanga     Pilibanga             North       110037  ...                  North        2018-12-27 09:27:00   2018-12-27           0.12             0.12
+2       Zone         MALOUT        MALOUT             North       110037  ...                  North        2018-12-26 14:33:19   2018-12-26           1.00             1.00
+3       Zone          Mandi         Mandi             North       110037  ...                  North        2018-12-26 14:33:19   2018-12-26           0.10             1.00
+4        ROI        PNQ/CHK          PUNE              West       110030  ...                  North        2018-12-25 09:44:16   2018-12-25           0.58             1.05
+...      ...            ...           ...               ...          ...  ...                    ...                        ...          ...            ...              ...
+24995  Metro        BLR/FC1     BANGALORE           South-2       110077  ...                  North        2018-12-13 08:41:37   2018-12-13           0.15             0.49
+24996  Metro        PNQ/CHK          PUNE              West       110075  ...                  North        2018-12-13 09:17:08   2018-12-13           0.53             0.50
+24997  Metro        BLR/FC1     BANGALORE           South-2       110078  ...                  North        2018-12-13 08:40:53   2018-12-13           0.49             0.78
+24998  Metro        BLR/FC1     BANGALORE           South-2       110075  ...                  North        2018-12-13 09:17:03   2018-12-13           0.37             1.08
+24999  Metro        BLR/FC1     BANGALORE           South-2       110075  ...                  North        2018-12-13 08:30:56   2018-12-13           0.19             0.49
+
+[25000 rows x 26 columns]
+2025-10-01 19:16:48,922 - INFO - Y Columns Names:0        Surface
+1        Surface
+2        Surface
+3        Surface
+4        Surface
+          ...   
+24995    Surface
+24996    Surface
+24997    Surface
+24998    Surface
+24999    Surface
+Name: routemode, Length: 25000, dtype: object
+2025-10-01 19:16:48,939 - INFO - Missing Values in the data : lane                                  0
+OriginHubName                         0
+OriginHubCity                         0
+OriginHubZoneName                     0
+ShipPinCode                           0
+ShipmentStatus                        0
+routemode                             0
+ProcessLocation1_InscanDate           0
+ProcessLocation1_BagOutScanDate       0
+ProcessLocation2_HubName_HubCity      0
+ProcessLocation2_BagInScanDate        0
+ProcessLocation2_BagOutScanDate       0
+ProcessLocation3_HubName_HubCity      0
+ProcessLocation3_BagInScanDate        0
+ProcessLocation3_BagOutScanDate       7
+ProcessLocation4_HubName_HubCity      0
+ProcessLocation4_BagInScanDate        0
+ProcessLocation4_BagOutScanDate       0
+Destination_HubName_HubCity           0
+Destination_BagInScanDate             0
+DestinationHubName                    0
+DestinationHubCity                    0
+DestinationHubZoneName                0
+Destination_BagOutScanDate          252
+DeliveryDate                          0
+PhysicalWeight                        0
+VolumetricWeight                      0
+dtype: int64
+2025-10-01 19:16:48,999 - INFO - lane                                        0
+OriginHubName                               0
+OriginHubCity                               0
+OriginHubZoneName                           0
+ShipPinCode                                 0
+ShipmentStatus                              0
+ProcessLocation1_InscanDate                 0
+ProcessLocation1_BagOutScanDate             0
+ProcessLocation2_HubName_HubCity            0
+ProcessLocation2_BagInScanDate              0
+ProcessLocation2_BagOutScanDate             0
+ProcessLocation3_HubName_HubCity            0
+ProcessLocation3_BagInScanDate              0
+ProcessLocation4_HubName_HubCity            0
+ProcessLocation4_BagInScanDate              0
+ProcessLocation4_BagOutScanDate             0
+Destination_HubName_HubCity                 0
+Destination_BagInScanDate                   0
+DestinationHubName                          0
+DestinationHubCity                          0
+DestinationHubZoneName                      0
+DeliveryDate                                0
+PhysicalWeight                              0
+VolumetricWeight                            0
+ProcessLocation3_BagOutScanDate_replaced    0
+Destination_BagOutScanDate_replaced         0
+dtype: int64
+2025-10-01 19:16:49,003 - INFO - lane                                        0
+OriginHubName                               0
+OriginHubCity                               0
+OriginHubZoneName                           0
+ShipPinCode                                 0
+ShipmentStatus                              0
+ProcessLocation1_InscanDate                 0
+ProcessLocation1_BagOutScanDate             0
+ProcessLocation2_HubName_HubCity            0
+ProcessLocation2_BagInScanDate              0
+ProcessLocation2_BagOutScanDate             0
+ProcessLocation3_HubName_HubCity            0
+ProcessLocation3_BagInScanDate              0
+ProcessLocation4_HubName_HubCity            0
+ProcessLocation4_BagInScanDate              0
+ProcessLocation4_BagOutScanDate             0
+Destination_HubName_HubCity                 0
+Destination_BagInScanDate                   0
+DestinationHubName                          0
+DestinationHubCity                          0
+DestinationHubZoneName                      0
+DeliveryDate                                0
+PhysicalWeight                              0
+VolumetricWeight                            0
+ProcessLocation3_BagOutScanDate_replaced    0
+Destination_BagOutScanDate_replaced         0
+dtype: int64
+2025-10-01 19:16:49,012 - INFO - Numerical Column Names: Index(['ShipPinCode', 'ProcessLocation1_InscanDate',
+       'ProcessLocation1_BagOutScanDate', 'ProcessLocation2_BagInScanDate',
+       'ProcessLocation2_BagOutScanDate', 'ProcessLocation3_BagInScanDate',
+       'ProcessLocation4_BagInScanDate', 'ProcessLocation4_BagOutScanDate',
+       'Destination_BagInScanDate', 'DeliveryDate', 'PhysicalWeight',
+       'VolumetricWeight', 'ProcessLocation3_BagOutScanDate_replaced',
+       'Destination_BagOutScanDate_replaced'],
+      dtype='object')
+2025-10-01 19:16:49,012 - INFO - Categorical Column Names: Index(['lane', 'OriginHubName', 'OriginHubCity', 'OriginHubZoneName',
+       'ShipmentStatus', 'ProcessLocation2_HubName_HubCity',
+       'ProcessLocation3_HubName_HubCity', 'ProcessLocation4_HubName_HubCity',
+       'Destination_HubName_HubCity', 'DestinationHubName',
+       'DestinationHubCity', 'DestinationHubZoneName'],
+      dtype='object')
+2025-10-01 19:16:49,126 - INFO - Train Data Features : Index(['ShipPinCode_log_trim', 'ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation3_BagInScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'PhysicalWeight_log_trim', 'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')
+2025-10-01 19:16:49,127 - INFO - Test Data Features : Index(['ShipPinCode_log_trim', 'ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation3_BagInScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'PhysicalWeight_log_trim', 'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')
+2025-10-01 19:16:49,135 - INFO - Train Column Names : Index(['ShipPinCode_log_trim', 'ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation3_BagInScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'PhysicalWeight_log_trim', 'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')
+2025-10-01 19:16:49,136 - INFO - Test Column Names : Index(['ShipPinCode_log_trim', 'ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation3_BagInScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'PhysicalWeight_log_trim', 'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')
+2025-10-01 19:16:49,149 - INFO - Train Column Names : Index(['ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation3_BagInScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')
+2025-10-01 19:16:49,149 - INFO - Test Column Names : Index(['ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation3_BagInScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')
+2025-10-01 19:16:49,173 - INFO - Train Column Names : Index(['ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')
+2025-10-01 19:16:49,173 - INFO - Test Column Names : Index(['ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')
+2025-10-01 19:16:49,173 - INFO - Categorical Column Names
+2025-10-01 19:16:49,173 - INFO - Index(['lane', 'OriginHubName', 'OriginHubCity', 'OriginHubZoneName',
+       'ShipmentStatus', 'ProcessLocation2_HubName_HubCity',
+       'ProcessLocation3_HubName_HubCity', 'ProcessLocation4_HubName_HubCity',
+       'Destination_HubName_HubCity', 'DestinationHubName',
+       'DestinationHubCity', 'DestinationHubZoneName'],
+      dtype='object')
+2025-10-01 19:16:49,173 - INFO - Index(['lane', 'OriginHubName', 'OriginHubCity', 'OriginHubZoneName',
+       'ShipmentStatus', 'ProcessLocation2_HubName_HubCity',
+       'ProcessLocation3_HubName_HubCity', 'ProcessLocation4_HubName_HubCity',
+       'Destination_HubName_HubCity', 'DestinationHubName',
+       'DestinationHubCity', 'DestinationHubZoneName'],
+      dtype='object')
+2025-10-01 19:16:49,186 - INFO - [array(['Metro', 'North East', 'ROI', 'State', 'Zone'], dtype=object), array(['AMD/PC1', 'Ajmer', 'Alwar', 'Ambala', 'Amritsar', 'BBN/CSP',
+       'BDQ/HUB', 'BHAGALPUR', 'BHIWANI', 'BHO/HUB', 'BLR/CNT', 'BLR/FC1',
+       'BLR/HOS', 'BOM/HUB', 'BOM/MAZ', 'Bahadurgarh', 'Bathinda',
+       'Bhilwara', 'Bhiwandi', 'Bikaner', 'CAR/HUB', 'CCU/PC1', 'CJB/HUB',
+       'COK/HUB', 'DEHRADUN', 'GAU/HUB', 'GAU/JLK', 'GKP/NSD', 'GWL/HUB',
+       'HARIDWAR', 'HISSAR', 'HYD/PC1', 'Hamirpur', 'IDR/HUB', 'JAI/HUB',
+       'JBL/HUB', 'JODHPUR', 'Jalandhar', 'Jamnagar', 'KANPUR', 'KARNAL',
+       'KNP/VKN', 'KURUKSHETRA', 'Kota', 'MAA/HUB', 'MADURAI', 'MALOUT',
+       'MOGA', 'MRT/BDM', 'Mandi', 'Meerut', 'NASHIK', 'NGP/HUB',
+       'NGP/MNR', 'PAT/HUB', 'PAT/PCK', 'PATIALA', 'PCK/AGR', 'PCK/HYD',
+       'PCK/JMU', 'PCK/LUD', 'PNP/HUB', 'PNQ/CHK', 'PNQ/DPR', 'PNQ/HUB',
+       'Pathankot', 'RAIPUR/HUB', 'RAN/HUB', 'RANCHI', 'RKT/HUB',
+       'ROHTAK', 'RSC/Anoopgarh', 'RSC/Auraiya', 'RSC/Bulandshahr',
+       'RSC/Jaisalmer', 'RSC/Pilibanga', 'RSC/Pratapgarh-RJ',
+       'SAHARANPUR', 'SIKAR', 'SONIPAT', 'Shahjahanpur', 'Surat/HUB',
+       'TRP/HUB', 'TRP/SNR', 'Tumkur', 'UDAIPUR', 'UNA', 'UPH',
+       'Udhampur', 'VIJ/HUB', 'VPI/HUB', 'YAMUNANAGAR'], dtype=object), array(['AMBALA', 'AMRITSAR', 'Agra', 'Ahmedabad', 'Ajmer', 'Alwar',
+       'Anoopgarh', 'Auraiya', 'BANGALORE', 'Bahadurgarh', 'Bhagalpur',
+       'Bhatinda', 'Bhilwara', 'Bhiwandi', 'Bhiwani', 'Bhopal',
+       'Bhubaneswar', 'Bikaner', 'Bulandshahr', 'Chandigarh', 'Chennai',
+       'Cochin', 'Coimbatore', 'Dehradun', 'Gorakhpur', 'Guwahati',
+       'Gwalior', 'HAMIRPUR', 'HOSUR', 'Haridwar', 'Hissar', 'Hyderabad',
+       'Indore', 'Jabalpur', 'Jaipur', 'Jaisalmer', 'Jalandhar', 'Jammu',
+       'Jamnagar', 'Jodhpur', 'KURUKSHETRA', 'Kanpur', 'Karnal',
+       'Kolkata', 'Kota', 'Lucknow', 'Ludhiana', 'MALOUT', 'MOGA',
+       'Madurai', 'Mandi', 'Meerut', 'Mumbai', 'Nagpur', 'Nashik', 'PUNE',
+       'Panipat', 'Pathankot', 'Patiala', 'Patna', 'Pilibanga',
+       'PratapgarhRJ', 'Raipur', 'Rajkot', 'Ranchi', 'Rohtak',
+       'SAHARANPUR', 'Shahijahanpur', 'Sikar', 'Somanur', 'Sonipat',
+       'Surat', 'Tirupur', 'Tumkur', 'UNA', 'Udaipur', 'Udhampur',
+       'VADODARA', 'Vapi', 'Vijayawada', 'Yamunanagar'], dtype=object), array(['Central', 'East', 'North', 'North East', 'South-1', 'South-2',
+       'West'], dtype=object), array(['AMD/HUB_Ahmedabad', 'AMD/PC1_Ahmedabad', 'Ambala_AMBALA',
+       'Amritsar_AMRITSAR', 'BBN/HUB_Bhubaneswar', 'BLR/HUB_BANGALORE',
+       'BOM/HUB_Mumbai', 'Bhiwandi_BHIWANDI', 'CAR/HUB_Chandigarh',
+       'CCU/HUB_KOLKATA', 'DEL/APT_Delhi NCR', 'DEL/HUB-TSP_DELHI NCR',
+       'DEL/IB2_GURGAON', 'DEL/LH1_GURGAON', 'DEL/MDK_NEW DELHI',
+       'DEL/PC1_Delhi NCR', 'DEL/PTD_DELHI NCR', 'DEL/RTO_Delhi',
+       'GAU/HUB_Guwahati', 'HYD/HUB_Hyderabad', 'JAI/HUB_Jaipur',
+       'JMU/UNJ_JAMMU', 'Meerut_Meerut', 'NGP/HUB_Nagpur',
+       'PAT/HUB_Patna', 'PCK/KNP_KANPUR', 'PNP/HUB_Panipat',
+       'PNQ/CHK_Pune', 'PNQ/HUB_PUNE', 'RAN/HUB_Ranchi',
+       'SURAT/LH1_SURAT'], dtype=object), array(['BLR/HUB_BANGALORE', 'BOM/HUB_Mumbai', 'Bhiwandi_BHIWANDI',
+       'DEL/APT_Delhi NCR', 'DEL/HUB-TSP_DELHI NCR', 'DEL/IB1_DELHI NCR',
+       'DEL/IB2_GURGAON', 'DEL/KLJ_NEW DELHI', 'DEL/LH1_GURGAON',
+       'DEL/OKH_Delhi', 'DEL/PC1_Delhi NCR', 'DEL/PTD_DELHI NCR',
+       'DEL/RTO_Delhi', 'DEL/WDL_Delhi NCR', 'PNP/HUB_Panipat'],
+      dtype=object), array(['DEL/ANG_GHAZIABAD', 'DEL/APT_Delhi NCR', 'DEL/DLF_GURUGRAM',
+       'DEL/EDL_Delhi NCR', 'DEL/GGN_Gurgaon', 'DEL/GNA_NOIDA',
+       'DEL/GZB_Ghaziabad', 'DEL/IB1_DELHI NCR', 'DEL/IB2_GURGAON',
+       'DEL/ISR_Delhi NCR', 'DEL/LH1_GURGAON', 'DEL/MVR_Noida',
+       'DEL/OKH_Delhi', 'DEL/PC1_Delhi NCR', 'DEL/PTD_DELHI NCR',
+       'DEL/WDL_Delhi NCR', 'FARIDABAD_Faridabad', 'FBD/NIT_FARIDABAD',
+       'GZB/MHN_NEW DELHI', 'NOIDA_Noida'], dtype=object), array(['DEL/ANG_GHAZIABAD', 'DEL/ASV_NEW DELHI', 'DEL/BDR_Delhi NCR',
+       'DEL/BGN_Delhi NCR', 'DEL/DLF_GURUGRAM', 'DEL/DWA_Delhi NCR',
+       'DEL/EDL_Delhi NCR', 'DEL/GDC_NEW DELHI', 'DEL/GGN_Gurgaon',
+       'DEL/GNA_NOIDA', 'DEL/GZB_Ghaziabad', 'DEL/IB1_DELHI NCR',
+       'DEL/IPX_Delhi NCR', 'DEL/ISR_Delhi NCR', 'DEL/JML_NEW DELHI',
+       'DEL/JPR_NEW DELHI', 'DEL/JWN_Delhi NCR', 'DEL/KLJ_NEW DELHI',
+       'DEL/KMP_DELHI NCR', 'DEL/KWN_NEW DELHI', 'DEL/LDS_NEW DELHI',
+       'DEL/LPN_NEW DELHI', 'DEL/MGK_NEW DELHI', 'DEL/MVR_Noida',
+       'DEL/NDL_Delhi NCR', 'DEL/NFG_NEW DELHI', 'DEL/PLM_NEW DELHI',
+       'DEL/RHN_NEW DELHI', 'DEL/RKP_Delhi NCR', 'DEL/SDE_Delhi NCR',
+       'DEL/SPJ_NEW DELHI', 'DEL/TKN_NEW DELHI', 'DEL/UTN_NEW DELHI',
+       'FARIDABAD_Faridabad', 'FBD/NIT_FARIDABAD', 'GZB/MHN_NEW DELHI',
+       'NOIDA_Noida'], dtype=object), array(['DEL/ANG', 'DEL/ASV', 'DEL/BDR', 'DEL/BGN', 'DEL/DLF', 'DEL/DWA',
+       'DEL/EDL', 'DEL/GDC', 'DEL/GGN', 'DEL/GNA', 'DEL/GZB', 'DEL/IB1',
+       'DEL/IPX', 'DEL/ISR', 'DEL/JML', 'DEL/JPR', 'DEL/JWN', 'DEL/KLJ',
+       'DEL/KMP', 'DEL/KWN', 'DEL/LDS', 'DEL/LPN', 'DEL/MGK', 'DEL/MVR',
+       'DEL/NDL', 'DEL/NFG', 'DEL/PLM', 'DEL/RHN', 'DEL/RKP', 'DEL/SDE',
+       'DEL/SPJ', 'DEL/TKN', 'DEL/UTN', 'FARIDABAD', 'FBD/NIT', 'GZB/MHN',
+       'NOIDA'], dtype=object), array(['Delhi NCR', 'Faridabad', 'Ghaziabad', 'Gurgaon', 'Gurugram',
+       'New Delhi', 'Noida'], dtype=object), array(['North'], dtype=object)]
+2025-10-01 19:16:49,188 - INFO - ['lane_North East' 'lane_ROI' 'lane_State' 'lane_Zone'
+ 'OriginHubName_Ajmer' 'OriginHubName_Alwar' 'OriginHubName_Ambala'
+ 'OriginHubName_Amritsar' 'OriginHubName_BBN/CSP' 'OriginHubName_BDQ/HUB'
+ 'OriginHubName_BHAGALPUR' 'OriginHubName_BHIWANI' 'OriginHubName_BHO/HUB'
+ 'OriginHubName_BLR/CNT' 'OriginHubName_BLR/FC1' 'OriginHubName_BLR/HOS'
+ 'OriginHubName_BOM/HUB' 'OriginHubName_BOM/MAZ'
+ 'OriginHubName_Bahadurgarh' 'OriginHubName_Bathinda'
+ 'OriginHubName_Bhilwara' 'OriginHubName_Bhiwandi' 'OriginHubName_Bikaner'
+ 'OriginHubName_CAR/HUB' 'OriginHubName_CCU/PC1' 'OriginHubName_CJB/HUB'
+ 'OriginHubName_COK/HUB' 'OriginHubName_DEHRADUN' 'OriginHubName_GAU/HUB'
+ 'OriginHubName_GAU/JLK' 'OriginHubName_GKP/NSD' 'OriginHubName_GWL/HUB'
+ 'OriginHubName_HARIDWAR' 'OriginHubName_HISSAR' 'OriginHubName_HYD/PC1'
+ 'OriginHubName_Hamirpur' 'OriginHubName_IDR/HUB' 'OriginHubName_JAI/HUB'
+ 'OriginHubName_JBL/HUB' 'OriginHubName_JODHPUR' 'OriginHubName_Jalandhar'
+ 'OriginHubName_Jamnagar' 'OriginHubName_KANPUR' 'OriginHubName_KARNAL'
+ 'OriginHubName_KNP/VKN' 'OriginHubName_KURUKSHETRA' 'OriginHubName_Kota'
+ 'OriginHubName_MAA/HUB' 'OriginHubName_MADURAI' 'OriginHubName_MALOUT'
+ 'OriginHubName_MOGA' 'OriginHubName_MRT/BDM' 'OriginHubName_Mandi'
+ 'OriginHubName_Meerut' 'OriginHubName_NASHIK' 'OriginHubName_NGP/HUB'
+ 'OriginHubName_NGP/MNR' 'OriginHubName_PAT/HUB' 'OriginHubName_PAT/PCK'
+ 'OriginHubName_PATIALA' 'OriginHubName_PCK/AGR' 'OriginHubName_PCK/HYD'
+ 'OriginHubName_PCK/JMU' 'OriginHubName_PCK/LUD' 'OriginHubName_PNP/HUB'
+ 'OriginHubName_PNQ/CHK' 'OriginHubName_PNQ/DPR' 'OriginHubName_PNQ/HUB'
+ 'OriginHubName_Pathankot' 'OriginHubName_RAIPUR/HUB'
+ 'OriginHubName_RAN/HUB' 'OriginHubName_RANCHI' 'OriginHubName_RKT/HUB'
+ 'OriginHubName_ROHTAK' 'OriginHubName_RSC/Anoopgarh'
+ 'OriginHubName_RSC/Auraiya' 'OriginHubName_RSC/Bulandshahr'
+ 'OriginHubName_RSC/Jaisalmer' 'OriginHubName_RSC/Pilibanga'
+ 'OriginHubName_RSC/Pratapgarh-RJ' 'OriginHubName_SAHARANPUR'
+ 'OriginHubName_SIKAR' 'OriginHubName_SONIPAT'
+ 'OriginHubName_Shahjahanpur' 'OriginHubName_Surat/HUB'
+ 'OriginHubName_TRP/HUB' 'OriginHubName_TRP/SNR' 'OriginHubName_Tumkur'
+ 'OriginHubName_UDAIPUR' 'OriginHubName_UNA' 'OriginHubName_UPH'
+ 'OriginHubName_Udhampur' 'OriginHubName_VIJ/HUB' 'OriginHubName_VPI/HUB'
+ 'OriginHubName_YAMUNANAGAR' 'OriginHubCity_AMRITSAR' 'OriginHubCity_Agra'
+ 'OriginHubCity_Ahmedabad' 'OriginHubCity_Ajmer' 'OriginHubCity_Alwar'
+ 'OriginHubCity_Anoopgarh' 'OriginHubCity_Auraiya'
+ 'OriginHubCity_BANGALORE' 'OriginHubCity_Bahadurgarh'
+ 'OriginHubCity_Bhagalpur' 'OriginHubCity_Bhatinda'
+ 'OriginHubCity_Bhilwara' 'OriginHubCity_Bhiwandi' 'OriginHubCity_Bhiwani'
+ 'OriginHubCity_Bhopal' 'OriginHubCity_Bhubaneswar'
+ 'OriginHubCity_Bikaner' 'OriginHubCity_Bulandshahr'
+ 'OriginHubCity_Chandigarh' 'OriginHubCity_Chennai' 'OriginHubCity_Cochin'
+ 'OriginHubCity_Coimbatore' 'OriginHubCity_Dehradun'
+ 'OriginHubCity_Gorakhpur' 'OriginHubCity_Guwahati'
+ 'OriginHubCity_Gwalior' 'OriginHubCity_HAMIRPUR' 'OriginHubCity_HOSUR'
+ 'OriginHubCity_Haridwar' 'OriginHubCity_Hissar' 'OriginHubCity_Hyderabad'
+ 'OriginHubCity_Indore' 'OriginHubCity_Jabalpur' 'OriginHubCity_Jaipur'
+ 'OriginHubCity_Jaisalmer' 'OriginHubCity_Jalandhar' 'OriginHubCity_Jammu'
+ 'OriginHubCity_Jamnagar' 'OriginHubCity_Jodhpur'
+ 'OriginHubCity_KURUKSHETRA' 'OriginHubCity_Kanpur' 'OriginHubCity_Karnal'
+ 'OriginHubCity_Kolkata' 'OriginHubCity_Kota' 'OriginHubCity_Lucknow'
+ 'OriginHubCity_Ludhiana' 'OriginHubCity_MALOUT' 'OriginHubCity_MOGA'
+ 'OriginHubCity_Madurai' 'OriginHubCity_Mandi' 'OriginHubCity_Meerut'
+ 'OriginHubCity_Mumbai' 'OriginHubCity_Nagpur' 'OriginHubCity_Nashik'
+ 'OriginHubCity_PUNE' 'OriginHubCity_Panipat' 'OriginHubCity_Pathankot'
+ 'OriginHubCity_Patiala' 'OriginHubCity_Patna' 'OriginHubCity_Pilibanga'
+ 'OriginHubCity_PratapgarhRJ' 'OriginHubCity_Raipur'
+ 'OriginHubCity_Rajkot' 'OriginHubCity_Ranchi' 'OriginHubCity_Rohtak'
+ 'OriginHubCity_SAHARANPUR' 'OriginHubCity_Shahijahanpur'
+ 'OriginHubCity_Sikar' 'OriginHubCity_Somanur' 'OriginHubCity_Sonipat'
+ 'OriginHubCity_Surat' 'OriginHubCity_Tirupur' 'OriginHubCity_Tumkur'
+ 'OriginHubCity_UNA' 'OriginHubCity_Udaipur' 'OriginHubCity_Udhampur'
+ 'OriginHubCity_VADODARA' 'OriginHubCity_Vapi' 'OriginHubCity_Vijayawada'
+ 'OriginHubCity_Yamunanagar' 'OriginHubZoneName_East'
+ 'OriginHubZoneName_North' 'OriginHubZoneName_North East'
+ 'OriginHubZoneName_South-1' 'OriginHubZoneName_South-2'
+ 'OriginHubZoneName_West'
+ 'ProcessLocation2_HubName_HubCity_AMD/PC1_Ahmedabad'
+ 'ProcessLocation2_HubName_HubCity_Ambala_AMBALA'
+ 'ProcessLocation2_HubName_HubCity_Amritsar_AMRITSAR'
+ 'ProcessLocation2_HubName_HubCity_BBN/HUB_Bhubaneswar'
+ 'ProcessLocation2_HubName_HubCity_BLR/HUB_BANGALORE'
+ 'ProcessLocation2_HubName_HubCity_BOM/HUB_Mumbai'
+ 'ProcessLocation2_HubName_HubCity_Bhiwandi_BHIWANDI'
+ 'ProcessLocation2_HubName_HubCity_CAR/HUB_Chandigarh'
+ 'ProcessLocation2_HubName_HubCity_CCU/HUB_KOLKATA'
+ 'ProcessLocation2_HubName_HubCity_DEL/APT_Delhi NCR'
+ 'ProcessLocation2_HubName_HubCity_DEL/HUB-TSP_DELHI NCR'
+ 'ProcessLocation2_HubName_HubCity_DEL/IB2_GURGAON'
+ 'ProcessLocation2_HubName_HubCity_DEL/LH1_GURGAON'
+ 'ProcessLocation2_HubName_HubCity_DEL/MDK_NEW DELHI'
+ 'ProcessLocation2_HubName_HubCity_DEL/PC1_Delhi NCR'
+ 'ProcessLocation2_HubName_HubCity_DEL/PTD_DELHI NCR'
+ 'ProcessLocation2_HubName_HubCity_DEL/RTO_Delhi'
+ 'ProcessLocation2_HubName_HubCity_GAU/HUB_Guwahati'
+ 'ProcessLocation2_HubName_HubCity_HYD/HUB_Hyderabad'
+ 'ProcessLocation2_HubName_HubCity_JAI/HUB_Jaipur'
+ 'ProcessLocation2_HubName_HubCity_JMU/UNJ_JAMMU'
+ 'ProcessLocation2_HubName_HubCity_Meerut_Meerut'
+ 'ProcessLocation2_HubName_HubCity_NGP/HUB_Nagpur'
+ 'ProcessLocation2_HubName_HubCity_PAT/HUB_Patna'
+ 'ProcessLocation2_HubName_HubCity_PCK/KNP_KANPUR'
+ 'ProcessLocation2_HubName_HubCity_PNP/HUB_Panipat'
+ 'ProcessLocation2_HubName_HubCity_PNQ/CHK_Pune'
+ 'ProcessLocation2_HubName_HubCity_PNQ/HUB_PUNE'
+ 'ProcessLocation2_HubName_HubCity_RAN/HUB_Ranchi'
+ 'ProcessLocation2_HubName_HubCity_SURAT/LH1_SURAT'
+ 'ProcessLocation3_HubName_HubCity_BOM/HUB_Mumbai'
+ 'ProcessLocation3_HubName_HubCity_Bhiwandi_BHIWANDI'
+ 'ProcessLocation3_HubName_HubCity_DEL/APT_Delhi NCR'
+ 'ProcessLocation3_HubName_HubCity_DEL/HUB-TSP_DELHI NCR'
+ 'ProcessLocation3_HubName_HubCity_DEL/IB1_DELHI NCR'
+ 'ProcessLocation3_HubName_HubCity_DEL/IB2_GURGAON'
+ 'ProcessLocation3_HubName_HubCity_DEL/KLJ_NEW DELHI'
+ 'ProcessLocation3_HubName_HubCity_DEL/LH1_GURGAON'
+ 'ProcessLocation3_HubName_HubCity_DEL/OKH_Delhi'
+ 'ProcessLocation3_HubName_HubCity_DEL/PC1_Delhi NCR'
+ 'ProcessLocation3_HubName_HubCity_DEL/PTD_DELHI NCR'
+ 'ProcessLocation3_HubName_HubCity_DEL/RTO_Delhi'
+ 'ProcessLocation3_HubName_HubCity_DEL/WDL_Delhi NCR'
+ 'ProcessLocation3_HubName_HubCity_PNP/HUB_Panipat'
+ 'ProcessLocation4_HubName_HubCity_DEL/APT_Delhi NCR'
+ 'ProcessLocation4_HubName_HubCity_DEL/DLF_GURUGRAM'
+ 'ProcessLocation4_HubName_HubCity_DEL/EDL_Delhi NCR'
+ 'ProcessLocation4_HubName_HubCity_DEL/GGN_Gurgaon'
+ 'ProcessLocation4_HubName_HubCity_DEL/GNA_NOIDA'
+ 'ProcessLocation4_HubName_HubCity_DEL/GZB_Ghaziabad'
+ 'ProcessLocation4_HubName_HubCity_DEL/IB1_DELHI NCR'
+ 'ProcessLocation4_HubName_HubCity_DEL/IB2_GURGAON'
+ 'ProcessLocation4_HubName_HubCity_DEL/ISR_Delhi NCR'
+ 'ProcessLocation4_HubName_HubCity_DEL/LH1_GURGAON'
+ 'ProcessLocation4_HubName_HubCity_DEL/MVR_Noida'
+ 'ProcessLocation4_HubName_HubCity_DEL/OKH_Delhi'
+ 'ProcessLocation4_HubName_HubCity_DEL/PC1_Delhi NCR'
+ 'ProcessLocation4_HubName_HubCity_DEL/PTD_DELHI NCR'
+ 'ProcessLocation4_HubName_HubCity_DEL/WDL_Delhi NCR'
+ 'ProcessLocation4_HubName_HubCity_FARIDABAD_Faridabad'
+ 'ProcessLocation4_HubName_HubCity_FBD/NIT_FARIDABAD'
+ 'ProcessLocation4_HubName_HubCity_GZB/MHN_NEW DELHI'
+ 'ProcessLocation4_HubName_HubCity_NOIDA_Noida'
+ 'Destination_HubName_HubCity_DEL/ASV_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/BDR_Delhi NCR'
+ 'Destination_HubName_HubCity_DEL/BGN_Delhi NCR'
+ 'Destination_HubName_HubCity_DEL/DLF_GURUGRAM'
+ 'Destination_HubName_HubCity_DEL/DWA_Delhi NCR'
+ 'Destination_HubName_HubCity_DEL/EDL_Delhi NCR'
+ 'Destination_HubName_HubCity_DEL/GDC_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/GGN_Gurgaon'
+ 'Destination_HubName_HubCity_DEL/GNA_NOIDA'
+ 'Destination_HubName_HubCity_DEL/GZB_Ghaziabad'
+ 'Destination_HubName_HubCity_DEL/IB1_DELHI NCR'
+ 'Destination_HubName_HubCity_DEL/IPX_Delhi NCR'
+ 'Destination_HubName_HubCity_DEL/ISR_Delhi NCR'
+ 'Destination_HubName_HubCity_DEL/JML_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/JPR_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/JWN_Delhi NCR'
+ 'Destination_HubName_HubCity_DEL/KLJ_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/KMP_DELHI NCR'
+ 'Destination_HubName_HubCity_DEL/KWN_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/LDS_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/LPN_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/MGK_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/MVR_Noida'
+ 'Destination_HubName_HubCity_DEL/NDL_Delhi NCR'
+ 'Destination_HubName_HubCity_DEL/NFG_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/PLM_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/RHN_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/RKP_Delhi NCR'
+ 'Destination_HubName_HubCity_DEL/SDE_Delhi NCR'
+ 'Destination_HubName_HubCity_DEL/SPJ_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/TKN_NEW DELHI'
+ 'Destination_HubName_HubCity_DEL/UTN_NEW DELHI'
+ 'Destination_HubName_HubCity_FARIDABAD_Faridabad'
+ 'Destination_HubName_HubCity_FBD/NIT_FARIDABAD'
+ 'Destination_HubName_HubCity_GZB/MHN_NEW DELHI'
+ 'Destination_HubName_HubCity_NOIDA_Noida' 'DestinationHubName_DEL/ASV'
+ 'DestinationHubName_DEL/BDR' 'DestinationHubName_DEL/BGN'
+ 'DestinationHubName_DEL/DLF' 'DestinationHubName_DEL/DWA'
+ 'DestinationHubName_DEL/EDL' 'DestinationHubName_DEL/GDC'
+ 'DestinationHubName_DEL/GGN' 'DestinationHubName_DEL/GNA'
+ 'DestinationHubName_DEL/GZB' 'DestinationHubName_DEL/IB1'
+ 'DestinationHubName_DEL/IPX' 'DestinationHubName_DEL/ISR'
+ 'DestinationHubName_DEL/JML' 'DestinationHubName_DEL/JPR'
+ 'DestinationHubName_DEL/JWN' 'DestinationHubName_DEL/KLJ'
+ 'DestinationHubName_DEL/KMP' 'DestinationHubName_DEL/KWN'
+ 'DestinationHubName_DEL/LDS' 'DestinationHubName_DEL/LPN'
+ 'DestinationHubName_DEL/MGK' 'DestinationHubName_DEL/MVR'
+ 'DestinationHubName_DEL/NDL' 'DestinationHubName_DEL/NFG'
+ 'DestinationHubName_DEL/PLM' 'DestinationHubName_DEL/RHN'
+ 'DestinationHubName_DEL/RKP' 'DestinationHubName_DEL/SDE'
+ 'DestinationHubName_DEL/SPJ' 'DestinationHubName_DEL/TKN'
+ 'DestinationHubName_DEL/UTN' 'DestinationHubName_FARIDABAD'
+ 'DestinationHubName_FBD/NIT' 'DestinationHubName_GZB/MHN'
+ 'DestinationHubName_NOIDA' 'DestinationHubCity_Faridabad'
+ 'DestinationHubCity_Ghaziabad' 'DestinationHubCity_Gurgaon'
+ 'DestinationHubCity_Gurugram' 'DestinationHubCity_New Delhi'
+ 'DestinationHubCity_Noida']
+2025-10-01 19:16:49,465 - INFO - [array(['Delivered'], dtype=object)]
+2025-10-01 19:16:49,466 - INFO - column_names : ['ShipmentStatus']
+2025-10-01 19:16:49,706 - INFO - lane_North East                 0
+lane_ROI                        0
+lane_State                      0
+lane_Zone                       0
+OriginHubName_Ajmer             0
+                               ..
+DestinationHubCity_Gurgaon      0
+DestinationHubCity_Gurugram     0
+DestinationHubCity_New Delhi    0
+DestinationHubCity_Noida        0
+ShipmentStatus_con              0
+Length: 323, dtype: int64
+2025-10-01 19:16:49,715 - INFO - lane_North East                 0
+lane_ROI                        0
+lane_State                      0
+lane_Zone                       0
+OriginHubName_Ajmer             0
+                               ..
+DestinationHubCity_Gurgaon      0
+DestinationHubCity_Gurugram     0
+DestinationHubCity_New Delhi    0
+DestinationHubCity_Noida        0
+ShipmentStatus_con              0
+Length: 323, dtype: int64
+2025-10-01 19:16:50,047 - INFO -        lane_North East  lane_ROI  lane_State  lane_Zone  ...  DestinationHubCity_Gurugram  DestinationHubCity_New Delhi  DestinationHubCity_Noida  ShipmentStatus_con
+2886               0.0       0.0         0.0        0.0  ...                          0.0                           0.0                       0.0                 0.0
+3768               0.0       0.0         0.0        0.0  ...                          0.0                           0.0                       0.0                 0.0
+16396              0.0       0.0         0.0        0.0  ...                          0.0                           0.0                       0.0                 0.0
+12090              0.0       0.0         0.0        0.0  ...                          0.0                           0.0                       0.0                 0.0
+12084              0.0       0.0         0.0        0.0  ...                          0.0                           0.0                       0.0                 0.0
+10870              0.0       0.0         0.0        0.0  ...                          0.0                           0.0                       0.0                 0.0
+8633               0.0       0.0         0.0        0.0  ...                          0.0                           0.0                       0.0                 0.0
+6723               0.0       1.0         0.0        0.0  ...                          0.0                           1.0                       0.0                 0.0
+4560               0.0       0.0         0.0        1.0  ...                          0.0                           1.0                       0.0                 0.0
+2062               0.0       1.0         0.0        0.0  ...                          0.0                           1.0                       0.0                 0.0
+
+[10 rows x 323 columns]
+2025-10-01 19:16:50,249 - INFO -       lane_North East  lane_ROI  lane_State  lane_Zone  ...  DestinationHubCity_Gurugram  DestinationHubCity_New Delhi  DestinationHubCity_Noida  ShipmentStatus_con
+85                0.0       1.0         0.0        0.0  ...                          0.0                           0.0                       0.0                 0.0
+4259              0.0       1.0         0.0        0.0  ...                          0.0                           1.0                       0.0                 0.0
+1511              0.0       1.0         0.0        0.0  ...                          0.0                           1.0                       0.0                 0.0
+3801              0.0       0.0         0.0        1.0  ...                          0.0                           1.0                       0.0                 0.0
+581               0.0       0.0         0.0        0.0  ...                          0.0                           0.0                       0.0                 0.0
+4802              0.0       0.0         0.0        0.0  ...                          0.0                           0.0                       0.0                 0.0
+2250              0.0       1.0         0.0        0.0  ...                          0.0                           1.0                       0.0                 0.0
+4250              0.0       1.0         0.0        0.0  ...                          1.0                           0.0                       0.0                 0.0
+1914              0.0       0.0         0.0        1.0  ...                          0.0                           1.0                       0.0                 0.0
+3261              0.0       0.0         0.0        0.0  ...                          0.0                           0.0                       0.0                 0.0
+
+[10 rows x 323 columns]
+2025-10-01 19:16:50,250 - INFO - y_train_data : ['Air' 'Surface']
+2025-10-01 19:16:50,251 - INFO - y_train_data : 0
+2025-10-01 19:16:50,252 - INFO - y_test_data : ['Surface' 'Air']
+2025-10-01 19:16:50,252 - INFO - y_test_data : 0
+2025-10-01 19:16:50,253 - INFO - 23311        Air
+23623        Air
+1020     Surface
+12645        Air
+1533     Surface
+3518     Surface
+483      Surface
+19370        Air
+12667        Air
+7403         Air
+Name: routemode, dtype: object
+2025-10-01 19:16:50,260 - INFO - detailed : ['Air' 'Surface'] 
+2025-10-01 19:16:50,260 - INFO - [0 0 1 0 1 1 1 0 0 0]
+2025-10-01 19:16:50,260 - INFO - y_train_data : (20000,)
+2025-10-01 19:16:50,260 - INFO - y_test_data : (5000,)
+2025-10-01 19:16:50,356 - INFO - Training_data shape : (20000, 334) -> Index(['ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       ...
+       'DestinationHubName_FBD/NIT', 'DestinationHubName_GZB/MHN',
+       'DestinationHubName_NOIDA', 'DestinationHubCity_Faridabad',
+       'DestinationHubCity_Ghaziabad', 'DestinationHubCity_Gurgaon',
+       'DestinationHubCity_Gurugram', 'DestinationHubCity_New Delhi',
+       'DestinationHubCity_Noida', 'ShipmentStatus_con'],
+      dtype='object', length=334)
+2025-10-01 19:16:50,356 - INFO - Testing_data shape : (5000, 334) -> Index(['ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       ...
+       'DestinationHubName_FBD/NIT', 'DestinationHubName_GZB/MHN',
+       'DestinationHubName_NOIDA', 'DestinationHubCity_Faridabad',
+       'DestinationHubCity_Ghaziabad', 'DestinationHubCity_Gurgaon',
+       'DestinationHubCity_Gurugram', 'DestinationHubCity_New Delhi',
+       'DestinationHubCity_Noida', 'ShipmentStatus_con'],
+      dtype='object', length=334)
+2025-10-01 19:16:50,356 - INFO - ----------------Before Balancing------------------------
+2025-10-01 19:16:50,358 - INFO - Total row for Surface category in training data 20000 was : 13444
+2025-10-01 19:16:50,360 - INFO - Total row for Air category in training data 20000 was : 6556
+2025-10-01 19:16:50,361 - INFO - ---------------After Balancing-------------------------
+2025-10-01 19:16:56,907 - INFO - Total row for Surface category in training data 26888 was : 13444
+2025-10-01 19:16:56,912 - INFO - Total row for Air category in training data 26888 was : 13444
+2025-10-01 19:16:56,915 - INFO - ---------Before scaling-------
+2025-10-01 19:16:57,101 - INFO -    ProcessLocation1_InscanDate_days_trim  ProcessLocation1_BagOutScanDate_days_trim  ...  DestinationHubCity_Noida  ShipmentStatus_con
+0                                   10.0                                        8.0  ...                       0.0                 0.0
+1                                   10.0                                        8.0  ...                       0.0                 0.0
+2                                   13.0                                       13.0  ...                       0.0                 0.0
+3                                   12.0                                       10.0  ...                       0.0                 0.0
+
+[4 rows x 334 columns]
+2025-10-01 19:16:57,393 - INFO - ----------After scaling--------
+2025-10-01 19:16:57,394 - INFO - [[-0.45198548 -0.76408308 -0.83354778 ...  1.46315043 -0.38326826
+   0.        ]
+ [-0.45198548 -0.76408308 -0.83354778 ...  1.46315043 -0.38326826
+   0.        ]
+ [ 1.21393638  1.93955831  2.53264341 ... -0.6887815  -0.38326826
+   0.        ]
+ ...
+ [-0.45198548 -0.28537682 -0.89789864 ...  1.46315043 -0.38326826
+   0.        ]
+ [ 1.21393638  1.39883003  0.55883307 ... -0.6887815  -0.38326826
+   0.        ]
+ [-0.45198548 -0.22335481 -0.83354778 ... -0.6887815  -0.38326826
+   0.        ]]
+2025-10-01 19:17:23,258 - INFO - ============ Finalized Model Decision Tree Classifier ===============
+2025-10-01 19:17:23,258 - INFO - Best Model Decision Tree Classifier
+2025-10-01 19:17:25,863 - INFO - Model Test Accuracy : 0.8632
+2025-10-01 19:17:25,889 - INFO - Confusion Matrix : [[1594   99]
+ [ 585 2722]]
+2025-10-01 19:17:25,924 - INFO - Classification Report :               precision    recall  f1-score   support
+
+           0       0.73      0.94      0.82      1693
+           1       0.96      0.82      0.89      3307
+
+    accuracy                           0.86      5000
+   macro avg       0.85      0.88      0.86      5000
+weighted avg       0.89      0.86      0.87      5000
+
+2025-10-01 19:17:25,925 - INFO - =====Model Saving======

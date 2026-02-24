@@ -1,0 +1,26 @@
+2025-10-01 19:16:49,134 - INFO - Total columns : 14 -> without variance 0 : 14 -> with Variance 0 : 0
+2025-10-01 19:16:49,134 - INFO - Variance 0 : names : Index([], dtype='object')
+2025-10-01 19:16:49,135 - INFO - Train Column Names : Index(['ShipPinCode_log_trim', 'ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation3_BagInScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'PhysicalWeight_log_trim', 'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')
+2025-10-01 19:16:49,135 - INFO - Test Column Names : Index(['ShipPinCode_log_trim', 'ProcessLocation1_InscanDate_days_trim',
+       'ProcessLocation1_BagOutScanDate_days_trim',
+       'ProcessLocation2_BagInScanDate_days_trim',
+       'ProcessLocation2_BagOutScanDate_days_trim',
+       'ProcessLocation3_BagInScanDate_days_trim',
+       'ProcessLocation4_BagInScanDate_days_trim',
+       'ProcessLocation4_BagOutScanDate_days_trim',
+       'Destination_BagInScanDate_days_trim', 'DeliveryDate_days_trim',
+       'PhysicalWeight_log_trim', 'VolumetricWeight_log_trim',
+       'ProcessLocation3_BagOutScanDate_replaced_days_trim',
+       'Destination_BagOutScanDate_replaced_days_trim'],
+      dtype='object')
