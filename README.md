@@ -189,22 +189,6 @@ gunicorn app:app
 
 ---
 
-## 📸 Screenshots (Placeholders)
-
-> Add screenshots before final submission:
-
-* Home Page UI
-* Filled Input Form
-* Prediction Output
-* Cloud Deployment URL
-
-```md
-![Home Page](screenshots/home.png)
-![Prediction Result](screenshots/result.png)
-```
-
----
-
 ## 🔮 Future Enhancements
 
 * Replace rule-based logic with Machine Learning model
