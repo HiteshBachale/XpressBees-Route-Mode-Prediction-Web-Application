@@ -199,13 +199,13 @@ gunicorn app:app
 
 ---
 
-## 👨‍💻 Developer
+## 👨‍💻 Developer  
 
-Name: Hitesh Dhananjay Bachale
-Role: Data Scientist | ML Engineer
-Email: hitesh.bachaleofficial@gmail.com
-LinkedIn: linkedin.com/in/hiteshbachale
-GitHub: github.com/HiteshBachale
+**Name:** Hitesh Dhananjay Bachale  
+**Role:** Data Scientist | ML Engineer  
+**Email:** [hitesh.bachaleofficial@gmail.com](mailto:hitesh.bachaleofficial@gmail.com)  
+**LinkedIn:** [linkedin.com/in/hiteshbachale](https://www.linkedin.com/in/hiteshbachale)  
+**GitHub:** [github.com/HiteshBachale](https://github.com/HiteshBachale)
 
 ---
 
