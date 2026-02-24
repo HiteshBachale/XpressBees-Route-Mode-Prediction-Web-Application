@@ -199,10 +199,13 @@ gunicorn app:app
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Developer
 
-**Hitesh Bachale**
-Project created for academic and learning purposes.
+Name: Hitesh Dhananjay Bachale
+Role: Data Scientist | ML Engineer
+Email: hitesh.bachaleofficial@gmail.com
+LinkedIn: linkedin.com/in/hiteshbachale
+GitHub: github.com/HiteshBachale
 
 ---
 
